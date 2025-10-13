@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+     "postbuild": "npm run prisma:migrate",
     "start": "next start",
     "lint": "eslint",
-    "seed": "ts-node ./prisma/seed.ts"
+    "seed": "ts-node ./prisma/seed.ts",
+    "prisma:migrate": "prisma migrate deploy"
   },
   "dependencies": {
     "@prisma/client": "^6.17.1",
