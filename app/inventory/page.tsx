@@ -3,6 +3,7 @@ import Sidebar from "@/components/sidebar";
 import { deleteProduct } from "@/lib/actions/products";
 import  getCurrentUser  from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { Product } from "@prisma/client";
 
 export default async function InventoryPage({
   searchParams,
@@ -93,8 +94,8 @@ export default async function InventoryPage({
               </thead>
 
               <tbody className="bg-white divide-y divide-gray-200">
-                {items.map((product:any, key: any) => (
-                  <tr key={key} className="hover:bg-gray-50">
+                {items.map((product, key) => (
+                  <tr key={product.id} className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-sm text-gray-500">
                       {product.name}
                     </td>
