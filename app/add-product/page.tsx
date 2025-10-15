@@ -4,7 +4,7 @@ import getCurrentUser  from "@/lib/auth";
 import Link from "next/link";
 
 export default async function AddProductPage() {
-  const _user = await getCurrentUser();
+  const user = await getCurrentUser();
   return (
     <div className="min-h-screen bg-gray-50">
       <Sidebar currentPath="/add-product" />
