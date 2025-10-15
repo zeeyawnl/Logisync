@@ -105,7 +105,7 @@ export default async function DashboardPage() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-2xl font-semibold text-gray-900">Dashboard</h1>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-gray-500 pt-3">
                 Welcome back! Here is an overview of your inventory.
               </p>
             </div>
@@ -116,7 +116,7 @@ export default async function DashboardPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
           <div className="bg-white rounded-lg border border-gray-200 p-6">
             <h2 className="text-lg font-semibold text-gray-900 mb-6">Key Metrics</h2>
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-3 gap-6 mt-14">
               <div className="text-center">
                 <div className="text-3xl font-bold text-gray-900">{totalProducts}</div>
                 <div className="text-sm text-gray-600">Total Products</div>
@@ -201,7 +201,7 @@ export default async function DashboardPage() {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-gray-900">{inStockPercentage}%</div>
-                  <div className="text-sm text-gray-600">In Stock</div>
+                  <div className="text-sm text-gray-600 mt-7">In Stock</div>
                 </div>
               </div>
             </div>
