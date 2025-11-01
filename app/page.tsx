@@ -24,8 +24,8 @@ export default async function Home() {
         />
       </div>
 
-      {/* Optional overlay for text readability */}
-      <div className="absolute inset-0 bg-black/20 -z-10"></div>
+      
+     
 
       {/* Foreground content */}
       <Navbar />
