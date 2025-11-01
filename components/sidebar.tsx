@@ -12,7 +12,7 @@ export default function Sidebar({currentPath = "/dashboard"}: {currentPath?: str
 
     ];
   return (
-    <div className="fixed left-0 top-0 bg-gray-800 text-white w-64 h-full p-6 z-10 min-h-screen">
+    <div className="fixed left-0 top-0 bg-gray-800 text-white w-58 h-full p-6 z-10 min-h-screen">
     <div className="mb-8">
         <div className="flex items-center space-x-2 mb-4">
             <Database className="w-7 h-7"/>
