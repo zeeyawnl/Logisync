@@ -9,18 +9,19 @@ const Hero = () => {
 
       {/* Foreground content */}
       <div className="relative z-10 text-center px-6">
-        <h1 className="text-5xl font-bold mb-6 text-gray-900 text-shadow-grey-md">
+        <h1 className="text-7xl font-bold mb-6 text-gray-900 text-shadow-grey-md">
           Welcome to <span className="text-blue-600">LogiSync</span>
         </h1>
-        <p className="text-lg mb-8 text-gray-700 tracking-wide">
+        <p className="text-lg mb-12 text-gray-700 tracking-wide">
           Streamline your inventory management with ease and efficiency.
         </p>
         <a
-          href="/sign-in"
-          className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-        >
-          Get Started
-        </a>
+  href="/sign-in"
+  className="px-8 py-4 bg-blue-600 text-white text-lg rounded-xl hover:bg-blue-700 transition shadow-md"
+>
+  Get Started
+</a>
+
       </div>
     </div>
   )
